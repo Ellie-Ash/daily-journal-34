@@ -8,21 +8,25 @@
     <title>Daily Journal</title>
 </head>
 <body>
+    <h1 class="title"> Ellie's Journal </h1>
     <form class="dailyJournal">
-        <p class="tag"> Date: </p>
-        <input type="date"> 
-        <p class="tag"> Concepts: </p>
-        <input type="text">
-        <p class="tag"> Entry: </p>
-        <input type="textarea">
-        <p class="tag"> Mood: </p>
-        <select>
+        <label for="date"> Date: </label>
+        <input class="input" type="date"> 
+
+        <label for="concepts"> Concepts: </label>
+        <input class="input" type="text">
+
+        <label for="entry"> Entry: </label>
+        <textarea class="input" rows="15" cols="15"></textarea>
+
+        <label for="mood"> Mood: </label>
+        <select class="input">
             <option> Happy </option>
             <option> Neutral </option>
             <option> Sad </option>
         </select>
 
     </form>
-    
+    <script src="main.js"></script>
 </body>
 </html>
