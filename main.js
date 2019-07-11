@@ -22,11 +22,12 @@ const journalEntry3 = {
     mood: "neutral"
 }
 
-const allEntries = [];
+const entriesArray = [];
 
-allEntries.push(journalEntry);
+entriesArray.push(journalEntry1, journalEntry2, journalEntry3);
 
-console.log(allEntries)
+console.log(entriesArray)
+
 
 
 
