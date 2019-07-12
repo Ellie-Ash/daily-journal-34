@@ -8,12 +8,14 @@
     <title>Daily Journal</title>
 </head>
 <body>
-    <h1 class="title"> Ellie's Journal </h1>
+
+    <h1 class="title"> Daily Journal </h1>
+
     <form class="dailyJournal">
         <label for="date"> Date: </label>
         <input class="input" type="date"> 
 
-        <label for="concepts"> Concepts: </label>
+        <label for="topic"> Topic: </label>
         <input class="input" type="text">
 
         <label for="entry"> Entry: </label>
@@ -26,7 +28,17 @@
             <option> Sad </option>
         </select>
 
+        <button class="saveBtn"> Save </button>
+
     </form>
+
+    <div class="pastEntries">
+        <h3 class="title"> Past Entries </h3>
+        <p class="entries">
+
+        </p>
+    </div>
+
     <script src="main.js"></script>
 </body>
 </html>

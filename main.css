@@ -1,12 +1,34 @@
-label {
-    background-color: lightblue;
+html {
+    /* background-image: url("https://i.pinimg.com/originals/00/ab/f9/00abf988f532effce4aa9d1601a7d4ba.gif"); */
+    background-color: rgb(222, 202, 255);
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
 }
+
+.title {
+    text-align: center;
+    font-size: 3em;
+    color: rgb(154, 255, 139);
+    text-shadow: 5px 3px rgb(254, 166, 98);
+}
+
 
 .dailyJournal {
     display: flex;
     flex-direction: column;
-    width: 50%;
+    justify-content: center;
+    margin: 0em 6em;
+    padding: 3em;
+    border-radius: 10px;
 }
+
+.saveBtn {
+    text-align: center;
+    width: 5em;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
 
 .input {
     margin-bottom: 1em;
