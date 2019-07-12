@@ -1,32 +1,32 @@
-console.log("hello")
-
-const journalEntry1 = {
+const journalEntry = {
     date: "07-11-2019",
-    covered: "HTML/CSS",
+    topic: "HTML/CSS",
     entry: "Today we reviewed some basics",
-    mood: "happy"
-    
+    mood: "happy" 
 }
 
-const journalEntry2 = {
+const x = {
     date: "07-12-2019",
-    covered: "Javascript",
-    entry: "I practiced using JS objects and arrays",
-    mood: "neutral"
+    topic: "Javascript",
+    entry: "We learned about objects and arrays",
+    mood: "neutral" 
 }
 
-const journalEntry3 = {
-    date: "07-13-2019",
-    covered: "Career",
-    entry: "We listened to a lecture about LinkedIn",
-    mood: "neutral"
+
+
+const allEntries = []
+
+updateDOM = () => {
+    const entry = `<div>
+    <h4>${journalEntry.date}</h4>
+    <h4>${journalEntry.topic}</h4>
+    <p>${journalEntry.entry}</p>
+    <p>Mood: ${journalEntry.mood}</p>
+    </div>`
+    const el = document.querySelector(".entries")
+    el.innerHTML += entry
 }
-
-const entriesArray = [];
-
-entriesArray.push(journalEntry1, journalEntry2, journalEntry3);
-
-console.log(entriesArray)
+updateDOM()
 
 
 
