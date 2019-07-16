@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="main.css">
+
+    <link href="https://fonts.googleapis.com/css?family=VT323&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap" rel="stylesheet">
+
     <title>Daily Journal</title>
 </head>
 <body>
@@ -16,7 +21,14 @@
         <input class="input" type="date"> 
 
         <label for="topic"> Topic: </label>
-        <input class="input" type="text">
+        <select class="input">
+            <option> HTML/CSS </option>
+            <option> Javascript </option>
+            <option> React </option>
+            <option> C# </option>
+            <option> Career </option>
+            <option> Other </option>
+        </select>
 
         <label for="entry"> Entry: </label>
         <textarea class="input" rows="15" cols="15"></textarea>
@@ -25,16 +37,18 @@
         <select class="input">
             <option> Happy </option>
             <option> Neutral </option>
-            <option> Sad </option>
-        </select>
+            <option> Frustrated </option>           
 
+        </select>
+        <div class="btnContainer">
         <button class="saveBtn"> Save </button>
+        </div>
 
     </form>
 
-    <div class="pastEntries">
+    <div class="entries">
         <h3 class="title"> Past Entries </h3>
-        <p class="entries">
+        <p class="pastEntries">
 
         </p>
     </div>

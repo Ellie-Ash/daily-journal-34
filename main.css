@@ -1,15 +1,13 @@
 html {
-    /* background-image: url("https://i.pinimg.com/originals/00/ab/f9/00abf988f532effce4aa9d1601a7d4ba.gif"); */
-    background-color: rgb(222, 202, 255);
-    font-family: 'Courier New', Courier, monospace;
-    color: white;
+    background-color: black;
+    font-family: 'Roboto Mono', monospace;
+    color: rgb(154, 255, 139);
+    font-size: 15px;
 }
 
 .title {
     text-align: center;
-    font-size: 3em;
-    color: rgb(154, 255, 139);
-    text-shadow: 5px 3px rgb(254, 166, 98);
+    font-size: 2em;
 }
 
 
@@ -17,19 +15,58 @@ html {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin: 0em 6em;
-    padding: 3em;
-    border-radius: 10px;
+    margin: 0em 20em;
+    flex-wrap: wrap;
+    
+}
+
+.btnContainer {
+    display: flex;
+    margin-top: 1em;
+    justify-content: center;
 }
 
 .saveBtn {
     text-align: center;
+    font-size: 15px;
     width: 5em;
     border-radius: 4px;
-    font-size: 14px;
+    color: rgb(154, 255, 139);
+    background-color: black;
+    border-color: rgb(154, 255, 139);
+    font-family: 'Roboto Mono', monospace;
 }
 
+.saveBtn:hover {
+    box-shadow: 0px 0px 1em rgb(0, 255, 55);
+}
 
 .input {
     margin-bottom: 1em;
+    background-color: black;
+    border-color: rgb(154, 255, 139);
+    color: rgb(154, 255, 139);
+    border-radius: 10px;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 15px;
+}
+
+/* .input:hover {
+    box-shadow: 0px 0px 1em rgb(0, 255, 55);
+} */
+
+.entries {
+    display: flex;
+    flex-direction: column;
+    margin: 2em;
+}
+
+hr {
+    border-color: rgb(154, 255, 139);
+}
+
+.pastHead {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }

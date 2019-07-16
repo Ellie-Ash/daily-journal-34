@@ -1,11 +1,11 @@
-const journalEntry = {
+const journalEntry1 = {
     date: "07-11-2019",
     topic: "HTML/CSS",
     entry: "Today we reviewed some basics",
     mood: "happy" 
 }
 
-const x = {
+const journalEntry2 = {
     date: "07-12-2019",
     topic: "Javascript",
     entry: "We learned about objects and arrays",
@@ -13,20 +13,24 @@ const x = {
 }
 
 
+renderEntry = (journalEntry) => {
 
-const allEntries = []
-
-updateDOM = () => {
-    const entry = `<div>
-    <h4>${journalEntry.date}</h4>
-    <h4>${journalEntry.topic}</h4>
-    <p>${journalEntry.entry}</p>
+    const entryAsHTML = `
+    <div class="pastHead">
+    <h3>${journalEntry.topic}</h3>
+    <h3>✳ ${journalEntry.date}</h3>
+    </div>
+    <p class="myPastEntry">${journalEntry.entry}</p>
     <p>Mood: ${journalEntry.mood}</p>
-    </div>`
-    const el = document.querySelector(".entries")
-    el.innerHTML += entry
+    <hr />
+    `
+
+    const el = document.querySelector(".pastEntries")
+    el.innerHTML += entryAsHTML
 }
-updateDOM()
+
+renderEntry(journalEntry1)
+renderEntry(journalEntry2)
 
 
 
