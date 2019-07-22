@@ -1,0 +1,29 @@
+{
+    "entries": 
+        [
+            {
+              "date": "07-04-19",
+              "topic": "Javascript",
+              "entry": "Today we learned about objects and arrays",
+              "mood": "neutral"
+            },
+            {
+              "date": "07-05-19",
+              "topic": "Javascript",
+              "entry": "Today we learned how to use an API",
+              "mood": "neutral"
+            },
+            {
+              "date": "07-06-19",
+              "topic": "Javascript",
+              "entry": "We learned how to create functions",
+              "mood": "happy"
+            },
+            {
+              "date": "07-07-19",
+              "topic": "HTML/CSS",
+              "entry": "Today we learned how to use querySelectors",
+              "mood": "happy"
+            }
+          ]
+    }
