@@ -1,18 +1,3 @@
-const journalEntry = {
-    date: "07-11-2019",
-    topic: "HTML/CSS",
-    entry: "Today we reviewed some basics",
-    mood: "happy" 
-}
-
-const x = {
-    date: "07-12-2019",
-    topic: "Javascript",
-    entry: "We learned about objects and arrays",
-    mood: "neutral" 
-}
-
-
 
 const allEntries = []
 
@@ -27,6 +12,12 @@ updateDOM = () => {
     el.innerHTML += entry
 }
 updateDOM()
+
+fetch("http://localhost:3000/entries")
+    .then(entries => entries.json())
+    .then(parsedEntries => {
+        console.table(parsedEntries)
+    })
 
 
 
