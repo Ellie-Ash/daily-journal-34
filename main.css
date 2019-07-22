@@ -1,13 +1,24 @@
 html {
-    background-color: black;
-    font-family: 'Roboto Mono', monospace;
+    background: url("https://66.media.tumblr.com/ebf74887520abe1b1fbed76f463af135/tumblr_pew3zxiCR71rnbw6mo1_1280.gif") no-repeat center center fixed;
+    background-size: cover;
+    min-height: 100vh;
+    font-family: 'VT323', monospace;
     color: rgb(154, 255, 139);
-    font-size: 15px;
 }
 
+/* https://data.whicdn.com/images/277276584/original.gif */
+
+/* https://66.media.tumblr.com/ebf74887520abe1b1fbed76f463af135/tumblr_pew3zxiCR71rnbw6mo1_1280.gif */
+
+/* https://external-preview.redd.it/vl2BsHBSjtMu19dn__4sm-yNsn1uEF01lDD60Z4YGmY.gif?width=1200&height=628.272251309&s=cad0f3dafa74fee176487bf5aa8466d30aeca956 */
+
+/* https://upload-assets.vice.com/files/2016/12/12/1481561777kul.gif */
+
 .title {
-    text-align: center;
-    font-size: 2em;
+    display: flex;
+    font-size: 5em;
+    margin: 50px;
+    justify-content: center;
 }
 
 
@@ -15,9 +26,8 @@ html {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin: 0em 20em;
+    margin: 0em 15em;
     flex-wrap: wrap;
-    
 }
 
 .btnContainer {
@@ -28,45 +38,71 @@ html {
 
 .saveBtn {
     text-align: center;
-    font-size: 15px;
+    font-size: 25px;
     width: 5em;
     border-radius: 4px;
     color: rgb(154, 255, 139);
-    background-color: black;
+    background-color: rgb(14,10,11);
     border-color: rgb(154, 255, 139);
-    font-family: 'Roboto Mono', monospace;
+    font-family: 'VT323', monospace;
 }
 
 .saveBtn:hover {
-    box-shadow: 0px 0px 1em rgb(0, 255, 55);
+    box-shadow: 0px 0px 1em rgb(58, 255, 58);
+    background-color: rgb(154, 255, 139);
+    color: black;
 }
 
 .input {
     margin-bottom: 1em;
-    background-color: black;
+    background-color: rgb(14,10,11);
     border-color: rgb(154, 255, 139);
     color: rgb(154, 255, 139);
     border-radius: 10px;
-    font-family: 'Roboto Mono', monospace;
-    font-size: 15px;
+    font-family: 'VT323', monospace;
+    font-size: 25px;
+    min-width: 11.2em;
 }
 
 /* .input:hover {
     box-shadow: 0px 0px 1em rgb(0, 255, 55);
 } */
 
-.entries {
-    display: flex;
-    flex-direction: column;
-    margin: 2em;
+
+label {
+    font-size: 25px;
 }
 
 hr {
-    border-color: rgb(154, 255, 139);
+    border: dashed rgb(154, 255, 139) 2px;
 }
 
 .pastHead {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+}
+
+.pastEntries {
+    background-color: black;
+    padding: 1em;
+    border: 1px rgb(154, 255, 139) solid;
+    border-radius: 10px;
+    font-size: 25px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    margin: 0em 10em;
+    flex-wrap: wrap;
+    min-width: 9em;
+    
+}
+
+.pastEntry {
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.stupidLine {
+    text-align: center;
 }
