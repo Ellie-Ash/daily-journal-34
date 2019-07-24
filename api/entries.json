@@ -24,6 +24,12 @@
               "topic": "HTML/CSS",
               "entry": "Today we learned how to use querySelectors",
               "mood": "happy"
+            },
+            {
+              "date": "07-10-19",
+              "topic": "None",
+              "entry": "Today we moved to a new building",
+              "mood": "happy"
             }
           ]
     }
